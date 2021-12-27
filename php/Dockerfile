@@ -3,6 +3,7 @@ RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 RUN apt-get update && apt-get upgrade -y
 
 COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+RUN  chmod 755 start-apache
 COPY start-apache /usr/local/bin
 RUN a2enmod rewrite
 
