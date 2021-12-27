@@ -1,8 +1,8 @@
 <?php
 
-$host="172.20.0.2";
-$user="root";
-$password="admin";
+$host="10.0.0.41";
+$user="admin";
+$password="Nadcan247#";
 $db="crud";
 
 $kon = mysqli_connect($host,$user,$password,$db);
